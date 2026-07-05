@@ -1,18 +1,19 @@
 {
-	"chrome_url_overrides": {
-		"newtab": "newtab.html"
-	},
+	"manifest_version": 3,
+	"name": "Simple Speed Dial",
+	"version": "2.6.0",
 	"description": "A speed dial functionally similar to the one used in Opera.",
 	"icons": {
 		"128": "icons/icon128.png",
 		"48": "icons/icon48.png",
 		"16": "icons/icon16.png"
 	},
-	"manifest_version": 2,
-	"name": "Simple Speed Dial",
+	"chrome_url_overrides": {
+		"newtab": "newtab.html"
+	},
 	"options_page": "options.html",
-	"permissions": [ "background", "bookmarks", "storage" ],
-	"background": { "scripts": [ "javascript/eventPage.js" ], "persistent": false },
-	"update_url": "http://clients2.google.com/service/update2/crx",
-	"version": "2.5.0"
+	"permissions": [ "bookmarks", "storage" ],
+	"background": {
+		"service_worker": "javascript/eventPage.js"
+	}
 }
