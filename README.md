@@ -23,6 +23,7 @@ This implementation is more limited than Opera's. Opera generates thumbnail inte
 
 Release Notes
 --------------
+- 2.6.1: Update of thumbnail generation service
 - 2.6.0: Update to Manifest v3
 - 2.5.0: Update of thumbnail generation service and other minor enhancements
 - 2.4.6: Added vertical centering option
